@@ -1,0 +1,63 @@
+.hero-container {
+    border: 3px solid #FAFAFA;
+    border-radius: 24px;
+    padding: 20px;
+}
+
+.bx {
+    font-size: 20px;
+}
+
+.top-member-container {
+    width: 100%;
+    border-radius: 9px;
+    padding: 20px;
+    background: linear-gradient(93deg, #EA1212 12.83%, #FB7515 100%);
+}
+
+.top-voucher-container {
+    width: 100%;
+    border-radius: 9px;
+    padding: 20px;
+    background: linear-gradient(93deg, #009ADC 12.83%, #290CDE 100%);
+    .voucher {
+        border-radius: 10px; background: #1163DE; height: 82px;
+        .v-content {
+            width: 100%;
+            border-radius: 9px;
+            padding: 5px;
+            height: 61px;
+            background: rgba(255, 255, 255, 0.70);
+        }
+
+        .btn-voucher {
+            .big {
+                font-size: 7px;
+                color: white;
+                background-color: #290CDE;
+                border-radius: 6px 0 0 6px;
+                padding: 7px 15px;
+                text-align: center;
+            }
+
+            .small {
+                font-size: 7px;
+                color: black;
+                padding: 7px 8px;
+                background-color: white;
+                font-weight: bold;
+                border-radius: 0 6px 6px 0 ;
+            }
+        }
+    }
+}
+
+.timer-bg {
+    border-radius: 5px;
+    background: linear-gradient(157deg, #1853EC 0%, #8EFFF1 100%);
+    box-shadow: 1px 2px 4px 0px rgba(0, 0, 0, 0.25);
+    padding: 5px;
+    font-size: 14px;
+    color: white;
+    font-weight: bold;
+}

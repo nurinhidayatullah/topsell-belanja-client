@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
+
+@import "mdb-angular-ui-kit/assets/scss/mdb.scss";
+
+@import "@fortawesome/fontawesome-free/scss/fontawesome.scss";
+@import "@fortawesome/fontawesome-free/scss/solid.scss";
+@import "@fortawesome/fontawesome-free/scss/regular.scss";
+@import "@fortawesome/fontawesome-free/scss/brands.scss";
+
+.h-divider {
+    width: 100%;
+    height: 1px;
+    background-color: #F2EFEF;
+}
+
+p {
+    line-height: 0px;
+}
+
+.text-xs {
+    font-size: 8px;
+}
+
+.text-sm {
+    font-size: 12px;
+}

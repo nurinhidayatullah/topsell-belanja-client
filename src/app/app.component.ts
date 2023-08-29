@@ -3,8 +3,9 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.sass']
+  styleUrls: ['./app.component.scss'],
+  template: `<h1>Hello World! </h1>`
 })
 export class AppComponent {
-  title = 'topsell-belanja-client';
+  title = 'Topsell Belanja';
 }
