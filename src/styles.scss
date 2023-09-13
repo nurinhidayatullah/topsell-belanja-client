@@ -19,13 +19,18 @@
     background-color: #F2EFEF;
 }
 
-p {
+* {
+    overflow-x: auto;
+  }
+
+.p-lh {
     line-height: 0px;
 }
 
-.no-lh {
-    line-height: normal;
+p {
+    margin: 0px !important;
 }
+
 .text-xs {
     font-size: 8px;
 }

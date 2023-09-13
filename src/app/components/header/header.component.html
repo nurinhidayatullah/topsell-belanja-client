@@ -1,70 +1,147 @@
-<div class="d-flex justify-content-between align-items-center my-3">
+<div *ngIf="!isMobile; else mobile_view">
+  <div class="d-flex justify-content-between align-items-center my-3">
     <div class="d-flex justify-content-between align-items-center">
-        <small class="text-dark"><strong>Topsell Belanja</strong></small>
-        <small class="text-dark mx-4"><strong>Lokasi Toko</strong></small>
-        <small class="text-dark"><strong>Cek Daftar Pesanan</strong></small>
+      <small class="text-dark"><strong>Topsell Belanja</strong></small>
+      <small class="text-dark mx-4"><strong>Lokasi Toko</strong></small>
+      <small class="text-dark"><strong>Cek Daftar Pesanan</strong></small>
     </div>
     <div class="d-flex justify-content-between align-items-center">
-        <small class="text-dark"><strong>CS Viranda</strong></small>
-        <small class="text-dark mx-4"><strong>Artikel</strong></small>
-        <small class="text-dark"><strong>Promo & Voucher</strong></small>
+      <small class="text-dark"><strong>CS Viranda</strong></small>
+      <small class="text-dark mx-4"><strong>Artikel</strong></small>
+      <small class="text-dark"><strong>Promo & Voucher</strong></small>
     </div>
-</div>
-<div class="custom-header-container w-100 px-4 py-3">
-    <img src={{logoPath}} alt="logo" width="180px">
+  </div>
+  <div class="custom-header-container w-100 px-4 py-3">
+    <img src="{{ logoPath }}" alt="logo" width="180px" />
     <div class="row align-items-center my-4">
-        <div class="col-auto">
-            <small class="text-light"><strong>12.000 Points</strong></small>
-        </div>
-        <div class="col">
-            <div class="custom-form-container w-100">
-                <div style="white-space: nowrap;"><small class="text-dark font-weight-bold">Semua Kategori</small></div>
-                <div class="v-divider mx-4"></div>
-                <div class="input-group input-group-sm">
-                    <input type="text" class="form-control form-control-sm" placeholder="Cari Produk mu di topsellbelanja" aria-label="Recipient's username" aria-describedby="basic-addon2">
-                    <div class="input-group-append">
-                      <button class="btn btn-outline-secondary bg-dark" type="button"><i class='bx bx-search-alt-2 text-light'></i></button>
-                    </div>
-                </div>
+      <div class="col-auto">
+        <small class="text-light"><strong>12.000 Points</strong></small>
+      </div>
+      <div class="col">
+        <div class="custom-form-container w-100">
+          <div style="white-space: nowrap">
+            <small class="text-dark font-weight-bold">Semua Kategori</small>
+          </div>
+          <div class="v-divider mx-4"></div>
+          <div class="input-group input-group-sm">
+            <input
+              type="text"
+              class="form-control form-control-sm"
+              placeholder="Cari Produk mu di topsellbelanja"
+              aria-label="Recipient's username"
+              aria-describedby="basic-addon2"
+            />
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary bg-dark" type="button">
+                <i class="bx bx-search-alt-2 text-light"></i>
+              </button>
             </div>
-            
+          </div>
         </div>
-        <div class="col-auto">
-            <i class='bx bxs-heart text-light' style="font-size: 26px;"></i>
-        </div>
-        <div class="col-auto">
-            <i class='bx bxs-cart-alt text-light' style="font-size: 26px;"></i>
-        </div>
-        <div class="col-auto">
-            <button class="btn btn-outline-danger bg-light text-danger font-weight-bold">Masuk</button>
-        </div>
-        <div class="col-auto">
-            <button class="btn btn-danger text-light font-weight-bold">Daftar</button>
-        </div>
+      </div>
+      <div class="col-auto">
+        <i class="bx bxs-heart text-light" style="font-size: 26px"></i>
+      </div>
+      <div class="col-auto">
+        <i class="bx bxs-cart-alt text-light" style="font-size: 26px"></i>
+      </div>
+      <div class="col-auto">
+        <button
+          class="btn btn-outline-danger bg-light text-danger font-weight-bold"
+        >
+          Masuk
+        </button>
+      </div>
+      <div class="col-auto">
+        <button class="btn btn-danger text-light font-weight-bold">
+          Daftar
+        </button>
+      </div>
     </div>
     <div class="w-100 d-flex justify-content-center">
-        <div class="d-flex justify-content-between align-items-center">
-            <div class="d-flex align-items-center">
-                <small class="text-light mr-2">Handphone</small>
-                <input type="radio" aria-label="Radio button for following text input">
+      <div class="d-flex justify-content-between align-items-center">
+        <div class="d-flex align-items-center">
+          <small class="text-light mr-2">Handphone</small>
+          <input
+            type="radio"
+            aria-label="Radio button for following text input"
+          />
+        </div>
+        <div class="d-flex align-items-center mx-3">
+          <small class="text-light mr-2">Handphone</small>
+          <input
+            type="radio"
+            aria-label="Radio button for following text input"
+          />
+        </div>
+        <div class="d-flex align-items-center mx-3">
+          <small class="text-light mr-2">Handphone</small>
+          <input
+            type="radio"
+            aria-label="Radio button for following text input"
+          />
+        </div>
+        <div class="d-flex align-items-center mx-3">
+          <small class="text-light mr-2">Handphone</small>
+          <input
+            type="radio"
+            aria-label="Radio button for following text input"
+          />
+        </div>
+        <div class="d-flex align-items-center">
+          <small class="text-light mr-2">Handphone</small>
+          <input
+            type="radio"
+            aria-label="Radio button for following text input"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<ng-template #mobile_view>
+  <img class="ellipse" src="{{ ellipseBg }}" alt="logo" />
+  <div class="container position-absolute top-0 my-2">
+    <img src="{{ logoPath }}" alt="logo" width="180px" />
+    <div class="d-flex align-items-center justify-content-between">
+            <div class="input-group my-2 mr-sm-2">
+              <div class="input-group-prepend">
+                <div class="input-group-text"><i class="bx bx-search-alt-2 text-muted"></i></div>
+              </div>
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Cari produk di topsellbelanja"
+              />
             </div>
-            <div class="d-flex align-items-center mx-3">
-                <small class="text-light mr-2">Handphone</small>
-                <input type="radio" aria-label="Radio button for following text input">
+        <div class="d-flex">
+            <i class='bx bxs-bell text-light px-3' style="font-size: 28px;"></i>
+            <i class='bx bxs-cart-alt text-light px-3' style="font-size: 28px;"></i>
+            <i class='bx bx-menu text-light px-3' style="font-size: 28px;"></i>
+        </div>
+    </div>
+    <div class="d-flex align-items-center">
+        <i class='bx bx-current-location text-light pr-3'></i>
+        <small class="text-light">di kirim ke <strong>Jombang Jawa Timur</strong></small>
+    </div>
+    <div class="hero-container shadow-lg my-2">
+        <img src="{{qrUsp}}" alt="" class="mx-3">
+        <div class="v-divider mx-2"></div>
+        <div class="d-flex align-items-center">
+            <img  src="{{starUsp}}" alt="">
+            <div class="ml-3">
+                <p class="text-sm text-warning">0 Point</p>
+                <p class="text-xs">Cek Poinmu</p>
             </div>
-            <div class="d-flex align-items-center mx-3">
-                <small class="text-light mr-2">Handphone</small>
-                <input type="radio" aria-label="Radio button for following text input">
-            </div>
-            <div class="d-flex align-items-center mx-3">
-                <small class="text-light mr-2">Handphone</small>
-                <input type="radio" aria-label="Radio button for following text input">
-            </div>
-            <div class="d-flex align-items-center">
-                <small class="text-light mr-2">Handphone</small>
-                <input type="radio" aria-label="Radio button for following text input">
+        </div>
+        <div class="v-divider mx-2"></div>
+        <div class="d-flex align-items-center">
+            <img  src="{{badgeUsp}}" alt="">
+            <div class="ml-3">
+                <p class="text-sm">Member Silver</p>
+                <p class="text-xs">0 Voucher Baru</p>
             </div>
         </div>
     </div>
-    
-</div>
+  </div>
+</ng-template>

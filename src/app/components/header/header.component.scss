@@ -35,3 +35,33 @@
   font-style: italic;
   font-size: 12px;
 }
+
+.d-relative {
+  position: relative;;
+}
+
+.ellipse {
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.input-group-text {
+  background-color: white;
+  border: none;
+}
+
+.form-control {
+  border: none;
+}
+
+.hero-container {
+  border: 3px solid #FAFAFA;
+  background-color: #FAFAFA;
+  border-radius: 4px;
+  padding: 10px;
+  margin: 0 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

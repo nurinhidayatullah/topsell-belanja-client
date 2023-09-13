@@ -71,12 +71,39 @@
     box-shadow: 2px 4px 13px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
+.grad-container-mobile {
+    width: 100%;
+    height: 237px;
+    flex-shrink: 0;
+    border-radius: 13px 12px 12px 13px;
+    background: radial-gradient(96.69% 100.50% at 108.33% 0.00%, #3DEFE4 0%, rgba(20, 40, 220, 0.77) 100%);
+    box-shadow: 2px 4px 13px 0px rgba(0, 0, 0, 0.25) inset, 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
 .stack-container {
     position: absolute;
     z-index: 10;
     top: 0;
     left: 29px;
     display: flex;
+}
+
+.stack-container-mobile {
+    position: absolute;
+    z-index: 10;
+    top: 0;
+    left: 10px;
+    display: flex;
+}
+
+
+.absolute-container {
+    position: absolute;
+    top: 200px;
+}
+
+.brand-mobile-container {
+    background: linear-gradient(90deg, #434B95 12.22%, rgba(37, 175, 234, 0.69) 139.91%);
 }
 
 .btc-container {
